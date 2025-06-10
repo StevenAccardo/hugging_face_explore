@@ -13,9 +13,9 @@ print(result)
 
 
 # Text generation with a model selected
-generator = pipeline("text-generation", model="distilgpt2")
+generator = pipeline('text-generation', model='distilgpt2')
 result2 = generator(
-    "In this course, we will teach you how to",
+    'In this course, we will teach you how to',
     max_length=30,
     num_return_sequences=2,
 )

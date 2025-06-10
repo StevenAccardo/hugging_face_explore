@@ -2,10 +2,10 @@ from transformers import pipeline
 
 # No model was supplied, defaulted to distilbert/distilroberta-base
 # Fill mask will try to predict the word that goes in the place of the mask token
-unmasker = pipeline("fill-mask")
+unmasker = pipeline('fill-mask')
 # top_k denotes how many results you want back
 # <mask> is the mask token. Changes depending on the model used
-results = unmasker("This course will teach you all about <mask> models.", top_k=2)
+results = unmasker('This course will teach you all about <mask> models.', top_k=2)
 print(results)
 
 # The score is the probablility that the guessed answer is correct. This is not a true probability, but the softmax divided by the logits.

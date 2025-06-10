@@ -2,8 +2,8 @@ from transformers import pipeline
 
 # No model was supplied, defaulted to dbmdz/bert-large-cased-finetuned-conll03-english
 # Named entitty recognition is used to classify named entitities in text into predefined categories.
-ner = pipeline("ner", grouped_entities=True)
-result = ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
+ner = pipeline('ner', grouped_entities=True)
+result = ner('My name is Sylvain and I work at Hugging Face in Brooklyn.')
 
 print(result)
 # [
