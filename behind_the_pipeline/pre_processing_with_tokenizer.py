@@ -33,7 +33,7 @@ print(inputs)
 # }
 
 
-checkpoint = "distilbert-base-uncased-finetuned-sst-2-english"
+checkpoint = 'distilbert-base-uncased-finetuned-sst-2-english'
 # Downloads the model data just like we did with the transformer above
 # Ou
 model = AutoModel.from_pretrained(checkpoint)
@@ -46,7 +46,7 @@ print(outputs.last_hidden_state.shape)
 # torch.Size([2, 16, 768])
 
 
-checkpoint = "distilbert-base-uncased-finetuned-sst-2-english"
+checkpoint = 'distilbert-base-uncased-finetuned-sst-2-english'
 # The type of task that a model handles relies heavily on the head that is used
 # Here we are assigning a head to the be used on the model output data
 model = AutoModelForSequenceClassification.from_pretrained(checkpoint)
